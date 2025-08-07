@@ -1,0 +1,10 @@
+filesystem\*
+kvstore\*
+platform\*
+blockdevice\COMPONENT_DATAFLASH\*
+blockdevice\COMPONENT_FLASHIAP\*
+blockdevice\COMPONENT_I2CEE\*
+blockdevice\COMPONENT_OSPIF\*
+blockdevice\COMPONENT_QSPIF\*
+blockdevice\COMPONENT_SD\*
+blockdevice\COMPONENT_SPIF\*

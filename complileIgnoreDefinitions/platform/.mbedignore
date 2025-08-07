@@ -1,0 +1,10 @@
+source\ATCmdParser.cpp
+source\FileBase.cpp
+source\FilePath.cpp
+source\FileSystemHandle.cpp
+source\LocalFileSystem.cpp
+include\platform\ATCmdParser.h
+include\platform\FileBase.h
+include\platform\FilePath.h
+include\platform\FileSystemHandle.h
+include\platform\LocalFileSystem.h

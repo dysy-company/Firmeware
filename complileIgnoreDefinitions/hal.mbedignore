@@ -1,0 +1,16 @@
+include\hal\analogin_api.h
+include\hal\analogout_api.h
+include\hal\can_api.h
+include\hal\can_helper.h
+include\hal\crc_api.h
+include\hal\flash_api.h
+include\hal\i2c_api.h
+include\hal\mpu_api.h
+include\hal\ospi_api.h
+include\hal\pwmout_api.h
+include\hal\qspi_api.h
+include\hal\spi_api.h
+source\mbed_flash_api.c
+source\mpu\*
+TARGET_FLASH_CMSIS_ALGO\*
+usb\*

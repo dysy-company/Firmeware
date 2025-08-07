@@ -1,0 +1,37 @@
+/* This file content a task list for task manager */
+#include <mbed.h>
+
+#ifndef Tasks_h
+#define Tasks_h
+
+enum class Task : uint32_t{
+
+ NONE                                       = 0x00000000,
+ ADC_CALIBRATION                            = 0x00000001,
+ SET_REFERENCE_VOLTAGE                      = 0x00000002,
+ POSITION_CALIBRATION                       = 0x00000003,
+ WRITE_TO_FLASH_STRAIN_CALIBRATION_COEFS    = 0x00000004,
+ READ_FROM_FLASH_STRAIN_CALIBRATON_COEFS    = 0x00000005,
+ WRITE_TO_FLASH_STRAIN_CALIBRATION_POINTS   = 0x00000006,
+ READ_FROM_FLASH_STRAIN_CALIBRATION_POINTS  = 0x00000007,
+ DEFORMATION_CALIBRATION                    = 0x00000008,
+ ENCODER_AND_MOTOR_CALIBRATION              = 0x00000009,
+ SET_EXTENS_REF_VOLTAGE                     = 0x00000012,
+ SET_STEPS                                  = 0x00000013,
+ SET_DISPL_REF_VOLTAGE                      = 0x00000014,
+ SET_TCYCLE                                 = 0x00000100,
+ ADD_FILTER_TYPE_AND_RANGE_AT_END           = 0x00000101,
+ ADD_FILTER_TYPE_AND_RANGE_AT_INDEX         = 0x00000102,
+ REMOOVE_FILTER_BY_PARAMETER                = 0x00000103,
+ ORDERING_ONE_AFTER_ANOTHER_BY_PARAMETER    = 0x00000104,
+ ADD_SIN_DISPL_NULL_POINT                   = 0x00000105,
+ SET_FILTERING_ACTIVITY_UNIT                = 0x00000106,
+ SET_FILTERING_ACTIVITY_DATA_LINE           = 0x00000107,
+ SET_FILTERING_ACTIVITY_ALL                 = 0x00000108,
+ CHANGE_ETHERNET_PROTOCOL_VERSION           = 0x0000F000,
+ START_TEST_BY_REMOTE_CONTROLLER            = 0x0000F001,
+ STOP_TEST_BY_REMOTE_CONTROLLER             = 0x0000F002,
+// TASK_SWITCH_STRAIN_AMP                          0x00000003
+
+};
+#endif

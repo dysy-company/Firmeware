@@ -1,0 +1,40 @@
+#ifndef BOARD_H743ZI2_H
+#define BOARD_H743ZI2_H
+
+#include <mbed.h>
+#include "..//..//lib//AD56x1//AD56x1.h"
+
+
+//Reference voltage adjuster settings
+#define REFERENCE_VOLTAGE_ADJUSTER_TYPE                     AD5621
+#define REFERENCE_VOLTAGE_ADJUSTER_OPERATION_TYPE           NORMAL_OPERATION
+#define REFERENCE_VOLTAGE_ADJUSTER_BAUD_RATE_PRESCALER      SPI_BAUDRATEPRESCALER_256
+#define REFERENCE_VOLTAGE_ADJUSTER_POWER_SUPPLY             (float)3.0
+#define REFERENCE_VOLTAGE_ADJUSTER_VOLTAGE_MULTIPLAYER      (float)5.0
+#define REFERENCE_VOLTAGE_ADJUSTER_SET_VOLTAGE_TIMEOUT      500ms
+
+//Reference voltage adjuster extens settings
+#define REFERENCE_VOLTAGE_ADJUSTER_EXTENS_BAUD_RATE_PRESCALER      SPI_BAUDRATEPRESCALER_128
+#define REFERENCE_VOLTAGE_ADJUSTER_EXTENS_POWER_SUPPLY             (float)4.096
+#define REFERENCE_VOLTAGE_ADJUSTER_EXTENS_VOLTAGE_MULTIPLAYER      (float)5.0
+#define REFERENCE_VOLTAGE_ADJUSTER_EXTENS_SET_VOLTAGE_TIMEOUT      500ms
+#define REFERENCE_VOLTAGE_ADJUSTER_EXTENS_OUT_MODE                 (bool)false
+#define REFERENCE_VOLTAGE_ADJUSTER_EXTENS_IN_BUF_CTRL              (bool)true
+#define REFERENCE_VOLTAGE_ADJUSTER_EXTENS_GAIN                     (bool)true
+#define REFERENCE_VOLTAGE_ADJUSTER_EXTENS_OUT_PWR_DOWN_CTRL        (bool)true
+
+//Strain sensor ADC settings
+#define STRAIN_SENSOR_BAUD_RATE_PRESACALER                  SPI_BAUDRATEPRESCALER_8
+#define EXTENS_SENSOR_BAUD_RATE_PRESACALER                  SPI_BAUDRATEPRESCALER_8
+#define EXTENS_SENSOR1_BAUD_RATE_PRESACALER                 SPI_BAUDRATEPRESCALER_64
+//Servo valve DAC settings
+#define SERVO_DAC_BAUD_RATE_PRESCALER                       SPI_BAUDRATEPRESCALER_8
+//RSSI displacement sensor settings
+#define RSSI_NUMBER_OF_BITS                                 25
+#define RSSI_BAUD_RATE_PRESCALER                            SPI_BAUDRATEPRESCALER_256    //625kHz
+
+//MCP3201 Group ADC setting
+#define MCP3201_REF_VOLTAGE                                 (float)2.5
+#define MCP3201_BAUD_RATE_PRESCALER                         SPI_BAUDRATEPRESCALER_128    //1,25MHz
+
+#endif
